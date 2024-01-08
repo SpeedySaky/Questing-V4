@@ -537,6 +537,7 @@ TurnInQuestUsingDB(2459);
 ---- Step Count [1216] ----
 AcceptQuestUsingDB(487);
 ---------Step end-----------
+GrindAreaUntilLevel(10)
 
 ---- Step Count [1235] ----
 Ambusher = {};
@@ -561,6 +562,7 @@ end;
 
 ---- Step Count [1283] ----
 ---------Step end-----------
+GrindAreaUntilLevel(11)
 
 ---- Step Count [1301] ----
 CompleteObjectiveOfQuest(937,1)
