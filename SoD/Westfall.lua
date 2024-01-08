@@ -54,8 +54,6 @@ CompleteObjectiveOfQuest(153,1)
 TurnInQuestUsingDB(12);
 TurnInQuestUsingDB(153);
 
-CompleteObjectiveOfQuest(151,1)
-TurnInQuestUsingDB(151);
 
 CompleteObjectiveOfQuest(22,1)
 CompleteObjectiveOfQuest(38,1)
@@ -63,8 +61,12 @@ CompleteObjectiveOfQuest(38,2)
 CompleteObjectiveOfQuest(38,3)
 CompleteObjectiveOfQuest(38,4)
 
+GrindAreaUntilLevel(16)
+
 TurnInQuestUsingDB(22);
 TurnInQuestUsingDB(38);
+CompleteObjectiveOfQuest(151,1)
+TurnInQuestUsingDB(151);
 
 
 Log("This is the end of Westfall questing profile");
