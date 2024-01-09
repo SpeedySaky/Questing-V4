@@ -22,6 +22,7 @@ if (HasPlayerFinishedQuest(61)==false) then
 
 Log("Going Stormwind to turn in and get quests");
 end;
+
 TurnInQuestUsingDB(61);
 TurnInQuestUsingDB(1097);
 AcceptQuestUsingDB(399);
@@ -72,18 +73,92 @@ Murlocs = {};
 Murlocs[1] = 515;
 KillLootMurlocs = CreateObjective("KillMobsAndLoot",2,3,4,38,TableToList(Murlocs));
 MyInfo = DoObjective(KillLootMurlocs);
-end;---------Step end-----------
+end;
 CompleteObjectiveOfQuest(38,3)
 
 CompleteObjectiveOfQuest(38,4)
 
-GrindAreaUntilLevel(16)
 
 TurnInQuestUsingDB(22);
 TurnInQuestUsingDB(38);
 CompleteObjectiveOfQuest(151,1)
 TurnInQuestUsingDB(151);
 
+GrindAreaUntilLevel(16)
+TurnInQuestUsingDB(64);
+CompleteObjectiveOfQuest(102,1)
+TurnInQuestUsingDB(102);
+CompleteObjectiveOfQuest(13,1)
+CompleteObjectiveOfQuest(13,2)
+CompleteObjectiveOfQuest(399,1)
+TurnInQuestUsingDB(13);
+TurnInQuestUsingDB(6181);
+Log("Taking Hogger");
+AcceptQuestFrom(156561,176);  
+CompleteObjectiveOfQuest(176,1)
+TurnInQuestUsingDB(176);
+TurnInQuestUsingDB(6281);
+TurnInQuestUsingDB(399);
+TurnInQuestUsingDB(6261);
+AcceptQuestUsingDB(244);
+TurnInQuestUsingDB(244);
+if IsOnQuest(65)==true  and HasPlayerFinishedQuest(65)== false then
+QuestGoToPoint(-9223.782,-2163.917,63.73137);
+		 SendKey(37, 300);
+	  	 SleepPlugin(1000);
+		 SendKey(38, 1500);
+	  	 SleepPlugin(1000);
+		 SendKey(37, 500);
+		  SleepPlugin(1000);
+		 SendKey(38, 500);
+	  	 SleepPlugin(1000);
+		 SendKey(37, 500);
+		  SleepPlugin(1000);
+		 SendKey(38, 1500);
+
+Log("Turning The Defias Brotherhood");
+TurnInQuestAt(266,65);    --- The Defias Brotherhood
+end;
+AcceptQuestUsingDB(132);
+
+if IsOnQuest(129)==false and HasPlayerFinishedQuest(129)== false then
+QuestGoToPoint(-9213.599,-2163.979,67.57477);
+	  	 SendKey(38, 1000);
+	  	 SleepPlugin(1000);
+		 SendKey(39, 700);
+		 SleepPlugin(1000);
+		 SendKey(38, 1000);
+
+end;
+
+
+AcceptQuestUsingDB(129);
+AcceptQuestUsingDB(120);
+
+AcceptQuestUsingDB(118);
+TurnInQuestUsingDB(129);
+TurnInQuestUsingDB(120);
+
+TurnInQuestUsingDB(118);
+
+TurnInQuestUsingDB(6285);
+TurnInQuestUsingDB(132);
+
+CompleteObjectiveOfQuest(14,1)
+CompleteObjectiveOfQuest(14,2)
+AcceptQuestUsingDB(103);
+CompleteObjectiveOfQuest(103,1)
+TurnInQuestUsingDB(103);
+AcceptQuestUsingDB(104);
+AcceptQuestUsingDB(152);
+TurnInQuestUsingDB(14);
+CompleteObjectiveOfQuest(152,1)
+CompleteObjectiveOfQuest(152,2)
+CompleteObjectiveOfQuest(152,3)
+CompleteObjectiveOfQuest(152,4)
+CompleteObjectiveOfQuest(104,1)
+TurnInQuestUsingDB(104);
+TurnInQuestUsingDB(152);
 
 Log("This is the end of Westfall questing profile");
 
