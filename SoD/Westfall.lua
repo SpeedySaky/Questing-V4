@@ -56,9 +56,25 @@ TurnInQuestUsingDB(153);
 
 
 CompleteObjectiveOfQuest(22,1)
+TurnInQuestUsingDB(22);
+CompleteObjectiveOfQuest(151,1)
+TurnInQuestUsingDB(151);
+
 CompleteObjectiveOfQuest(38,1)
-CompleteObjectiveOfQuest(38,2)
+CompleteObjectiveOfQuest(64,1)
+CompleteObjectiveOfQuest(9,1)
+
+CompleteObjectiveOfQuest(38,1)
+if HasPlayerFinishedQuest(38)== false and CanTurnInQuest(38)==false then
+Log("Doing Murlocs");
+
+Murlocs = {};
+Murlocs[1] = 515;
+KillLootMurlocs = CreateObjective("KillMobsAndLoot",2,3,4,38,TableToList(Murlocs));
+MyInfo = DoObjective(KillLootMurlocs);
+end;---------Step end-----------
 CompleteObjectiveOfQuest(38,3)
+
 CompleteObjectiveOfQuest(38,4)
 
 GrindAreaUntilLevel(16)
