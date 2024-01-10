@@ -4,6 +4,11 @@ UseDBToSell(true)
 SetQuestRepairAt(30)
 SetQuestSellAt(2)
 
+function UsePhial()
+    UseItem("Empty Water Tube");
+     SleepPlugin(1500);
+   
+    end;
 
 
 AcceptQuestFrom(3666,983);
@@ -53,8 +58,8 @@ end;
 TurnInQuestUsingDB(984);
 
 
-if  HasPlayerFinishedQuest(4811) == false  then
-  Log("Doiing CrystalTurnInQuestAt(3514,921);");
+if  HasPlayerFinishedQuest(4811) == false and CanTurnInQuest(4811)==false then
+  Log("Doing Crystal");
 
 Crystal = {}; 
 Crystal[1] = 175524;
@@ -64,8 +69,29 @@ end;
 
 TurnInQuestUsingDB(957);
 TurnInQuestUsingDB(958);
-TurnInQuestAt(4811,2930);
+TurnInQuestUsingDB(2930);
+TurnInQuestAt(2930,4811);
+
+AcceptQuestFrom(2930,4812);
+
+if IsOnQuest(4812) == false and HasPlayerFinishedQuest(4812) == false then
+    Log("Doing Water Cascades");	
+
+    
+        QuestGoToPoint(6411.781,467.7597,8.034443);    
+		UsePhial()
+		Sleep(1500);
+       end;
+TurnInQuestAt(175524,4812);
+CompleteObjectiveOfQuest(985,1)
+CompleteObjectiveOfQuest(985,2)
+TurnInQuestUsingDB(985);
 
 
-Log("This is it");	
+TurnInQuestAt(2930,4813);
+
+Log("This is for now");	
+Log("Now manually complete following Quests objectives,no need to finish quests");	
+Log("Buzzbox 411");	
+Log("Washed Ashore");	
 StopQuestProfile();
