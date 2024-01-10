@@ -146,20 +146,19 @@ TurnInQuestUsingDB(132);
 
 CompleteObjectiveOfQuest(14,1)
 CompleteObjectiveOfQuest(14,2)
-AcceptQuestUsingDB(103);
-CompleteObjectiveOfQuest(103,1)
-TurnInQuestUsingDB(103);
-AcceptQuestUsingDB(104);
-AcceptQuestUsingDB(152);
-TurnInQuestUsingDB(14);
-CompleteObjectiveOfQuest(152,1)
-CompleteObjectiveOfQuest(152,2)
-CompleteObjectiveOfQuest(152,3)
-CompleteObjectiveOfQuest(152,4)
-CompleteObjectiveOfQuest(104,1)
-TurnInQuestUsingDB(104);
-TurnInQuestUsingDB(152);
 
+TurnInQuestUsingDB(14);
+
+if (Player.Level <19) then 
+Log("Grind to 13");
+
+Grind = {};
+Grind[1] = 154;
+Grind[2] = 115;
+
+Grind = CreateObjective("KillMobsAndLoot",1,10,1,999,TableToList(Grind));
+GrindUntilLvl(19,Grind,true);
+end;
 Log("This is the end of Westfall questing profile");
 
 StopQuestProfile();
