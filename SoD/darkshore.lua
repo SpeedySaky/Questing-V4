@@ -34,22 +34,37 @@ CompleteObjectiveOfQuest(958,1)
 CompleteObjectiveOfQuest(957,1)
 AcceptQuestUsingDB(953);
 CompleteObjectiveOfQuest(953,1)
-CompleteObjectiveOfQuest(953,2)
+
+if  HasPlayerFinishedQuest(953) == false  then
+
+Fall = {}; 
+Fall[1] = 17189;
+CollectFall = CreateObjective("GatherObject",2,1,2,953,nil,TableToList(Fall));
+MyInfo = DoObjective(CollectFall);
+end;
 TurnInQuestUsingDB(953);
 
-if (IsOnQuest(984) == true) and (CanTurnInQuest(984) == false)  then
-  QuestGoToPoint(5998.733,301.1935,20.80463);    
+if HasPlayerFinishedQuest(984) == false  then
   Log("How Big a Threat");
 
-end;
+  QuestGoToPoint(5998.733,301.1935,20.80463);    
 
-CompleteObjectiveOfQuest(4811,1)
+end;
+TurnInQuestUsingDB(984);
+
+
+if  HasPlayerFinishedQuest(4811) == false  then
+  Log("Doiing CrystalTurnInQuestAt(3514,921);");
+
+Crystal = {}; 
+Crystal[1] = 175524;
+CollectCrystal = CreateObjective("GatherObject",2,1,2,4811,nil,TableToList(Crystal));
+MyInfo = DoObjective(CollectCrystal);
+end;
 
 TurnInQuestUsingDB(957);
 TurnInQuestUsingDB(958);
-TurnInQuestUsingDB(4811);
-TurnInQuestUsingDB(984);
-
+TurnInQuestAt(4811,2930);
 
 
 Log("This is it");	
