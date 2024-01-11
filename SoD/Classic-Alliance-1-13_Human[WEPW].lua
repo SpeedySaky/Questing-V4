@@ -441,17 +441,34 @@ AcceptQuestUsingDB(112);
 ---------Step end-----------
 
 ---- Step Count [1194] ----
-GrindAreaUntilLevel(8)
 ---------Step end-----------
 
 ---- Step Count [1228] ----
-TurnInQuestUsingDB(5624);
 ---------Step end-----------
 
 ---- Step Count [1280] ----
 CompleteObjectiveOfQuest(112,1)
+GrindAreaUntilLevel(8)
+
 ---------Step end-----------
 
+if HasPlayerFinishedQuest(88)==false and CanTurnInQuest(88)==false then
+
+Log("Doing Princess Must Die!");
+
+Princess = {};
+Princess[1] = 330;
+KillLootPrincess = CreateObjective("KillMobsAndLoot",1,1,1,88,TableToList(Princess));
+MyInfo = DoObjective(KillLootPrincess);
+end;
+
+GrindAreaUntilLevel(10)
+
+if HasPlayerFinishedQuest(76)==false then
+Log("Doing The Fargodeep Mine");
+QuestGoToPoint(-9100.666,-564.2968,61.3069);
+
+end;
 
 ---------Step end-----------
 
@@ -460,10 +477,6 @@ TurnInQuestUsingDB(35);
 AcceptQuestUsingDB(52);
 ---------Step end-----------
 
----- Step Count [1370] ----
-CompleteObjectiveOfQuest(52,1)
-CompleteObjectiveOfQuest(52,2)
----------Step end-----------
 
 
 TurnInQuestAt(55,37);
@@ -476,8 +489,6 @@ AcceptQuestFrom(10616,5545);
 ---------Step end-----------
 TurnInQuestAt(55,37);
 ---- Step Count [1395] ----
-CompleteObjectiveOfQuest(52,1)
-CompleteObjectiveOfQuest(52,2)
 ---------Step end-----------
 
 ---- Step Count [1403] ----
@@ -493,8 +504,6 @@ TurnInQuestAt(56,45);
 TurnInQuestAt(10616,5545);
 
 ---- Step Count [1450] ----
-CompleteObjectiveOfQuest(52,1)
-CompleteObjectiveOfQuest(52,2)
 ---------Step end-----------
 
 ---- Step Count [1458] ----
@@ -536,24 +545,9 @@ TurnInQuestUsingDB(52);
 TurnInQuestAt(261,71);
 ---------Step end-----------
 
-if HasPlayerFinishedQuest(88)==false and CanTurnInQuest(88)==false then
 
-Log("Doing Princess Must Die!");
-
-Princess = {};
-Princess[1] = 330;
-KillLootPrincess = CreateObjective("KillMobsAndLoot",1,1,1,88,TableToList(Princess));
-MyInfo = DoObjective(KillLootPrincess);
-end;
-
-if HasPlayerFinishedQuest(76)==false then
-Log("Doing The Fargodeep Mine");
-QuestGoToPoint(-9100.666,-564.2968,61.3069);
-
-end;
 
 ---- Step Count [1606] ----
-GrindAreaUntilLevel(9)
 ---------Step end-----------
 
 ---- Step Count [1642] ----
@@ -578,11 +572,6 @@ GrindAreaUntilLevel(10)
 
 
 ---- Step Count [1678] ----
-GrindAreaUntilLevel(10)
----------Step end-----------
-
----- Step Count [1707] ----
-GrindAreaUntilLevel(10)
 ---------Step end-----------
 
 ---- Step Count [1747] ----
@@ -596,11 +585,6 @@ TurnInQuestUsingDB(88);
 ---------Step end-----------
 
 ---- Step Count [1759] ----
-GrindAreaUntilLevel(9)
----------Step end-----------
-
----- Step Count [1763] ----
-GrindAreaUntilLevel(9)
 ---------Step end-----------
 
 ---- Step Count [1770] ----
@@ -650,11 +634,6 @@ TurnInQuestUsingDB(11);
 ---------Step end-----------
 
 ---- Step Count [1932] ----
-GrindAreaUntilLevel(9)
----------Step end-----------
-
----- Step Count [1936] ----
-GrindAreaUntilLevel(9)
 ---------Step end-----------
 
 ---- Step Count [1944] ----
@@ -662,12 +641,11 @@ TurnInQuestUsingDB(184);
 ---------Step end-----------
 
 ---- Step Count [1972] ----
-GrindAreaUntilLevel(9)
 ---------Step end-----------
 
 
 TurnInQuestUsingDB(59);
-if (Player.Level <12) then 
+if (Player.Level <13) then 
 Log("Grind to 13");
 
 Grind = {};
