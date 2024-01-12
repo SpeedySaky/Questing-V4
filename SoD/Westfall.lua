@@ -48,10 +48,10 @@ AcceptQuestUsingDB(102);
 AcceptQuestUsingDB(12);
 AcceptQuestUsingDB(153);
 
-
+CompleteObjectiveOfQuest(153,1)
 CompleteObjectiveOfQuest(12,1)
 CompleteObjectiveOfQuest(12,2)
-CompleteObjectiveOfQuest(153,1)
+
 TurnInQuestUsingDB(12);
 TurnInQuestUsingDB(153);
 
