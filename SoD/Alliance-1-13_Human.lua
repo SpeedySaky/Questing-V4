@@ -283,10 +283,9 @@ if (Player.Level <10) then
 Log("Grind to 8");
 
 Grind = {};
-Grind[1] = 116;
-Grind[2] = 524;
-Grind[3] = 1922;
-Grind[4] = 822;
+Grind[1] = 524;
+Grind[2] = 1922;
+Grind[3] = 822;
 
 Grind = CreateObjective("KillMobsAndLoot",1,10,1,999,TableToList(Grind));
 GrindUntilLvl(10,Grind,true);
