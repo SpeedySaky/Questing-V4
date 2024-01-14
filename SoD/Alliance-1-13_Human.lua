@@ -270,17 +270,18 @@ AcceptQuestUsingDB(61);
 AcceptQuestUsingDB(112);
 ---------Step end-----------
 
-if HasPlayerFinishedQuest(76)==false and CanTurnInQuest(76)==false then
+if HasPlayerFinishedQuest(76)==false  then
 Log("Doing The Fargodeep Mine");
 QuestGoToPoint(-9100.666,-564.2968,61.3069);
 
 end;
 GrindAreaUntilLevel(9)
+TurnInQuestUsingDB(76);
 
 CompleteObjectiveOfQuest(112,1)
 
 if (Player.Level <10) then 
-Log("Grind to 8");
+Log("Grind to 10");
 
 Grind = {};
 Grind[1] = 524;
@@ -308,6 +309,27 @@ TurnInQuestUsingDB(112);
 ---------Step end-----------
 
 ---- Step Count [1363] ----
+
+---- Step Count [1378] ----
+AcceptQuestFrom(10616,5545);  
+---------Step end-----------
+CompleteObjectiveOfQuest(5545,1)
+TurnInQuestAt(10616,5545);
+
+AcceptQuestUsingDB(83);
+TurnInQuestUsingDB(114);
+TurnInQuestUsingDB(88);
+TurnInQuestUsingDB(239);
+AcceptQuestUsingDB(83);
+
+CompleteObjectiveOfQuest(83,1)
+GrindAreaUntilLevel(11)
+
+TurnInQuestUsingDB(83);
+TurnInQuestUsingDB(61);
+
+
+
 TurnInQuestUsingDB(35);
 AcceptQuestUsingDB(52);
 ---------Step end-----------
@@ -315,20 +337,17 @@ AcceptQuestUsingDB(52);
 
 
 TurnInQuestAt(55,37);
-
----- Step Count [1378] ----
-AcceptQuestFrom(10616,5545);  
----------Step end-----------
-
----- Step Count [1383] ----
 ---------Step end-----------
 TurnInQuestAt(55,37);
 ---- Step Count [1395] ----
 ---------Step end-----------
 
 ---- Step Count [1403] ----
-CompleteObjectiveOfQuest(5545,1)
 ---------Step end-----------
+CompleteObjectiveOfQuest(52,1)
+CompleteObjectiveOfQuest(52,2)
+TurnInQuestUsingDB(52);
+GrindAreaUntilLevel(12)
 
 ---- Step Count [1407] ----
 TurnInQuestAt(56,45);
@@ -336,59 +355,14 @@ TurnInQuestAt(56,45);
 
 
 
-TurnInQuestAt(10616,5545);
-
----- Step Count [1450] ----
----------Step end-----------
-
----- Step Count [1458] ----
-CompleteObjectiveOfQuest(5545,1)
----------Step end-----------
-
----- Step Count [1467] ----
-TurnInQuestUsingDB(5545);
----------Step end-----------
-
----- Step Count [1473] ----
-AcceptQuestUsingDB(83);
----------Step end-----------
-
 ---- Step Count [1478] ----
-CompleteObjectiveOfQuest(52,1)
-CompleteObjectiveOfQuest(52,2)
----------Step end-----------
-CompleteObjectiveOfQuest(83,1)
----------Step end-----------
-
----- Step Count [1560] ----
----------Step end-----------
-
----- Step Count [1600] ----
----------Step end-----------
-TurnInQuestUsingDB(83);
----- Step Count [1491] ----
-TurnInQuestUsingDB(52);
 TurnInQuestAt(240,39);
 AcceptQuestUsingDB(109);
----------Step end-----------
-
-
----- Step Count [1500] ----
-TurnInQuestUsingDB(52);
 TurnInQuestAt(261,71);
----------Step end-----------
-
-
-
----- Step Count [1606] ----
----------Step end-----------
-
----- Step Count [1642] ----
 AcceptQuestUsingDB(114);
 ---------Step end-----------
 
 ---- Step Count [1656] ----
-AcceptQuestUsingDB(239);
 AcceptQuestUsingDB(59);
 AcceptQuestUsingDB(109);
 ---------Step end-----------
@@ -396,22 +370,15 @@ AcceptQuestUsingDB(109);
 ---- Step Count [1665] ----
 AcceptQuestUsingDB(1097);
 ---------Step end-----------
-
----- Step Count [1670] ----
-GrindAreaUntilLevel(10)
----------Step end-----------
+TurnInQuestUsingDB(1097);
 
 
----- Step Count [1678] ----
----------Step end-----------
 
 ---- Step Count [1747] ----
 TurnInQuestUsingDB(114);
 ---------Step end-----------
 
 ---- Step Count [1752] ----
-TurnInQuestUsingDB(88);
-TurnInQuestUsingDB(88);
 TurnInQuestUsingDB(88);
 ---------Step end-----------
 
@@ -421,58 +388,9 @@ TurnInQuestUsingDB(88);
 ---- Step Count [1770] ----
 TurnInQuestUsingDB(239);
 AcceptQuestUsingDB(11);
----------Step end-----------
-
----- Step Count [1777] ----
-CompleteObjectiveOfQuest(11,1)
----------Step end-----------
-
----- Step Count [1799] ----
-TurnInQuestUsingDB(11);
----------Step end-----------
-
----- Step Count [1805] ----
-TurnInQuestUsingDB(239);
-AcceptQuestUsingDB(11);
----------Step end-----------
-
----- Step Count [1816] ----
-TurnInQuestUsingDB(239);
-AcceptQuestUsingDB(11);
----------Step end-----------
-
----- Step Count [1824] ----
-TurnInQuestUsingDB(239);
-AcceptQuestUsingDB(11);
----------Step end-----------
-
----- Step Count [1869] ----
----------Step end-----------
-
----- Step Count [1878] ----
-CompleteObjectiveOfQuest(11,1)
----------Step end-----------
-
----- Step Count [1884] ----
----------Step end-----------
-
----- Step Count [1904] ----
-CompleteObjectiveOfQuest(11,1)
----------Step end-----------
-
----- Step Count [1924] ----
-TurnInQuestUsingDB(11);
----------Step end-----------
-
----- Step Count [1932] ----
----------Step end-----------
 
 ---- Step Count [1944] ----
 TurnInQuestUsingDB(184);
----------Step end-----------
-
----- Step Count [1972] ----
----------Step end-----------
 
 
 TurnInQuestUsingDB(59);

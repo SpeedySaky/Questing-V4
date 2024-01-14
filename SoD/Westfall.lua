@@ -49,9 +49,9 @@ AcceptQuestUsingDB(12);
 AcceptQuestUsingDB(153);
 
 CompleteObjectiveOfQuest(153,1)
+
 CompleteObjectiveOfQuest(12,1)
 CompleteObjectiveOfQuest(12,2)
-
 TurnInQuestUsingDB(12);
 TurnInQuestUsingDB(153);
 
@@ -75,9 +75,15 @@ KillLootMurlocs = CreateObjective("KillMobsAndLoot",2,3,4,38,TableToList(Murlocs
 MyInfo = DoObjective(KillLootMurlocs);
 end;
 CompleteObjectiveOfQuest(38,3)
-
 CompleteObjectiveOfQuest(38,4)
 
+CompleteObjectiveOfQuest(11,1)
+---------Step end-----------
+
+---- Step Count [1799] ----
+TurnInQuestUsingDB(11);
+
+AcceptQuestUsingDB(239);
 
 TurnInQuestUsingDB(22);
 TurnInQuestUsingDB(38);
