@@ -152,6 +152,7 @@ TurnInQuestUsingDB(132);
 
 CompleteObjectiveOfQuest(14,1)
 CompleteObjectiveOfQuest(14,2)
+CompleteObjectiveOfQuest(14,3)
 
 TurnInQuestUsingDB(14);
 
