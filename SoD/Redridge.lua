@@ -108,7 +108,11 @@ TurnInQuestUsingDB(226);
 TurnInQuestUsingDB(245);
 TurnInQuestUsingDB(5);
 TurnInQuestUsingDB(148);
-AcceptQuestUsingDB(94);
+TurnInQuestUsingDB(66);
+TurnInQuestUsingDB(149);
+TurnInQuestUsingDB(240);
+
+AcceptQuestFrom(313,94); 
 AcceptQuestUsingDB(20);
 AcceptQuestUsingDB(150);
 AcceptQuestUsingDB(127);
@@ -121,6 +125,8 @@ CompleteObjectiveOfQuest(20,1)
 TurnInQuestUsingDB(150);
 TurnInQuestUsingDB(127);
 TurnInQuestUsingDB(20);
+CompleteObjectiveOfQuest(34,1)
+TurnInQuestUsingDB(34);
 
 
 Log("This is the end of Redridge questing profile");
