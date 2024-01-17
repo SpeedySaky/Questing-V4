@@ -53,6 +53,7 @@ CompleteObjectiveOfQuest(7,1)
 ---- Step Count [124] ----
 CompleteObjectiveOfQuest(33,1)
 ---------Step end-----------
+GrindAreaUntilLevel(4)
 
 ---- Step Count [134] ----
 TurnInQuestUsingDB(33);
@@ -69,6 +70,7 @@ AcceptQuestUsingDB(3103);
 AcceptQuestUsingDB(3104);
 AcceptQuestUsingDB(3105);
 
+
 TurnInQuestUsingDB(3100);
 TurnInQuestUsingDB(3101);
 TurnInQuestUsingDB(3102);
@@ -81,11 +83,6 @@ TurnInQuestUsingDB(3105);
 CompleteObjectiveOfQuest(15,1)
 ---------Step end-----------
 
----- Step Count [185] ----
-GrindAreaUntilLevel(4)
----------Step end-----------
-
----- Step Count [196] ----
 TurnInQuestUsingDB(15);
 AcceptQuestUsingDB(21);
 ---------Step end-----------

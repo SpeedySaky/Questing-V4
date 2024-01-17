@@ -184,41 +184,12 @@ GrindAreaUntilLevel(4)
 
 ---- Step Count [771] ----
 GrindAreaUntilLevel(4)
----------Step end-----------
-
----- Step Count [799] ----
----------Step end-----------
-
----- Step Count [805] ----
-GrindAreaUntilLevel(4)
----------Step end-----------
-
----- Step Count [813] ----
 CompleteObjectiveOfQuest(4402,1)
----------Step end-----------
-
----- Step Count [828] ----
-GrindAreaUntilLevel(4)
----------Step end-----------
-
----- Step Count [834] ----
 GrindAreaUntilLevel(5)
 ---------Step end-----------
 
 ---- Step Count [852] ----
 CompleteObjectiveOfQuest(1516,1)
----------Step end-----------
-
----- Step Count [858] ----
----------Step end-----------
-
----- Step Count [870] ----
----------Step end-----------
-
----- Step Count [875] ----
----------Step end-----------
-
----- Step Count [880] ----
 CompleteObjectiveOfQuest(794,1)
 ---------Step end-----------
 
@@ -229,30 +200,12 @@ CompleteObjectiveOfQuest(794,1)
 GrindAreaUntilLevel(6)
 ---------Step end-----------
 
----- Step Count [896] ----
-GrindAreaUntilLevel(5)
-GrindAreaUntilLevel(5)
----------Step end-----------
-
----- Step Count [902] ----
-GrindAreaUntilLevel(5)
-GrindAreaUntilLevel(5)
----------Step end-----------
-
 ---- Step Count [919] ----
 AcceptQuestUsingDB(784);
 ---------Step end-----------
 
 ---- Step Count [949] ----
 AcceptQuestUsingDB(791);
----------Step end-----------
-
----- Step Count [989] ----
----------Step end-----------
-
----- Step Count [995] ----
-GrindAreaUntilLevel(5)
-GrindAreaUntilLevel(5)
 ---------Step end-----------
 
 ---- Step Count [1003] ----
@@ -263,36 +216,6 @@ TurnInQuestUsingDB(4402);
 TurnInQuestUsingDB(794);
 AcceptQuestUsingDB(805);
 ---------Step end-----------
-
----- Step Count [1020] ----
----------Step end-----------
-
----- Step Count [1027] ----
----------Step end-----------
-
----- Step Count [1042] ----
-GrindAreaUntilLevel(6)
----------Step end-----------
-
----- Step Count [1052] ----
----------Step end-----------
-
----- Step Count [1116] ----
----------Step end-----------
-
----- Step Count [1125] ----
----------Step end-----------
-
----- Step Count [1167] ----
----------Step end-----------
-
----- Step Count [1174] ----
----------Step end-----------
-
----- Step Count [1184] ----
----------Step end-----------
-
----- Step Count [1207] ----
 AcceptQuestUsingDB(2161);
 ---------Step end-----------
 
@@ -305,8 +228,8 @@ TurnInQuestUsingDB(805);
 AcceptQuestUsingDB(823);
 ---------Step end-----------
 
----- Step Count [1385] ----
----------Step end-----------
+CompleteObjectiveOfQuest(791,1)
+GrindAreaUntilLevel(8)
 
 ---- Step Count [1439] ----
 Log("Doing Thwarting Kolkar Aggression");
@@ -330,11 +253,9 @@ MyInfo = DoObjective(CollectOrgrimmar);
 ---- Step Count [1478] ----
 TurnInQuestUsingDB(786);
 ---------Step end-----------
-
----- Step Count [1617] ----
----------Step end-----------
-
----------Step end-----------
+TurnInQuestUsingDB(2161);
+TurnInQuestUsingDB(791);
+TurnInQuestUsingDB(823);
 
 ---- Step Count [1682] ----
 CompleteObjectiveOfQuest(784,1)
@@ -344,42 +265,17 @@ CompleteObjectiveOfQuest(791,1)
 
 ---- Step Count [1690] ----
 CompleteObjectiveOfQuest(784,3)
----------Step end-----------
-
----- Step Count [1697] ----
----------Step end-----------
-
----- Step Count [1709] ----
 CompleteObjectiveOfQuest(784,1)
 CompleteObjectiveOfQuest(784,2)
-CompleteObjectiveOfQuest(791,1)
----------Step end-----------
-
----- Step Count [1723] ----
-CompleteObjectiveOfQuest(791,1)
----------Step end-----------
-
----- Step Count [1735] ----
-GrindAreaUntilLevel(7)
----------Step end-----------
-
----- Step Count [1744] ----
-GrindAreaUntilLevel(7)
----------Step end-----------
-
----- Step Count [1753] ----
-GrindAreaUntilLevel(7)
 ---------Step end-----------
 
 ---- Step Count [1762] ----
-GrindAreaUntilLevel(7)
 ---------Step end-----------
 
 ---- Step Count [1780] ----
 TurnInQuestUsingDB(823);
 AcceptQuestUsingDB(806);
 TurnInQuestUsingDB(784);
-AcceptQuestUsingDB(825);
 AcceptQuestUsingDB(837);
 ---------Step end-----------
 
@@ -394,7 +290,6 @@ TurnInQuestUsingDB(2161);
 ---- Step Count [1968] ----
 TurnInQuestUsingDB(2161);
 
-CompleteObjectiveOfQuest(825,1)
 ---------Step end-----------
 
 ---------Step end-----------
@@ -427,7 +322,6 @@ GrindAreaUntilLevel(9)
 ---------Step end-----------
 
 ---- Step Count [2271] ----
-TurnInQuestUsingDB(825);
 TurnInQuestUsingDB(837);
 
 if (Player.Level <13) then 
@@ -501,7 +395,6 @@ AcceptQuestUsingDB(828);
 
 ---------Step end-----------
 AcceptQuestUsingDB(828);
-TurnInQuestUsingDB(825);
 TurnInQuestUsingDB(837);
 ---------Step end-----------
 
@@ -1321,19 +1214,7 @@ GrindAreaUntilLevel(12)
 ---------Step end-----------
 
 ---- Step Count [4981] ----
-GrindAreaUntilLevel(12)
----------Step end-----------
 
----- Step Count [4987] ----
-GrindAreaUntilLevel(12)
----------Step end-----------
-
----- Step Count [4993] ----
-GrindAreaUntilLevel(12)
----------Step end-----------
-
----- Step Count [4999] ----
-GrindAreaUntilLevel(12)
 ---------Step end-----------
 
 ---- Step Count [5010] ----
@@ -1382,51 +1263,8 @@ TurnInQuestUsingDB(407);
 ---- Step Count [5096] ----
 TurnInQuestUsingDB(492);
 ---------Step end-----------
+GrindAreaUntilLevel(13)
 
----- Step Count [5103] ----
-GrindAreaUntilLevel(12)
-GrindAreaUntilLevel(14)
----------Step end-----------
-
----- Step Count [5110] ----
-GrindAreaUntilLevel(14)
----------Step end-----------
-
----- Step Count [5116] ----
-GrindAreaUntilLevel(12)
-GrindAreaUntilLevel(14)
----------Step end-----------
-
----- Step Count [5123] ----
-GrindAreaUntilLevel(14)
----------Step end-----------
-
----- Step Count [5129] ----
-GrindAreaUntilLevel(12)
-GrindAreaUntilLevel(14)
----------Step end-----------
-
----- Step Count [5136] ----
-GrindAreaUntilLevel(14)
----------Step end-----------
-
----- Step Count [5142] ----
-GrindAreaUntilLevel(12)
-GrindAreaUntilLevel(14)
----------Step end-----------
-
----- Step Count [5149] ----
-GrindAreaUntilLevel(14)
----------Step end-----------
-
----- Step Count [5155] ----
-GrindAreaUntilLevel(12)
-GrindAreaUntilLevel(14)
----------Step end-----------
-
----- Step Count [5162] ----
-GrindAreaUntilLevel(14)
----------Step end-----------
 
 ---- Step Count [5181] ----
 ---------Step end-----------
