@@ -79,15 +79,34 @@ AcceptQuestUsingDB(789);
 
 ---- Step Count [262] ----
 GrindAreaUntilLevel(4)
----------Step end-----------
+Log("Take Galgar's Cactus Apple Surprise");
+AcceptQuestFrom(9796,4402);  
+
+Log("Doing Apples");
+
+Apples = {};
+Apples[1] = 171938;
+CollectApples = CreateObjective("GatherObject",1,10,1,4402,nil,TableToList(Apples));
+MyInfo = DoObjective(CollectApples);
+
+
+if HasPlayerFinishedQuest(4402)==false then   --- Objective if
+  
+      Log("Player needs training!")
+      TrainAtNearestClassTrainer(); -- TrainMe  
+end -- HasSpell check
+
+
+Log("Turn Galgar's Cactus Apple Surprise");
+TurnInQuestAt(9796,4402);  
+
+
 Log("Take Vile Familiars");
 AcceptQuestFrom(3145,792);  
 
 Log("Take Sting of the Scorpid");
 AcceptQuestFrom(3143,789);  
 
-Log("Take Galgar's Cactus Apple Surprise");
-AcceptQuestFrom(9796,4402);  
 
 
 Log("Doing Vile Familiars");
@@ -104,44 +123,23 @@ Scorpid[1] = 3124;
 KillLootScorpid = CreateObjective("KillMobsAndLoot",1,10,1,789,TableToList(Scorpid));
 MyInfo = DoObjective(KillLootScorpid);
 
-Log("Doing Apples");
-
-Apples = {};
-Apples[1] = 171938;
-CollectApples = CreateObjective("GatherObject",1,10,1,4402,nil,TableToList(Apples));
-MyInfo = DoObjective(CollectApples);
 
 Log("Turn Your Vile Familiars");
 TurnInQuestAt(3145,792);  
 
+
+---- Step Count [73] ----
+
 Log("Turn Sting of the Scorpid");
 TurnInQuestAt(3143,789);  
 
-Log("Turn Galgar's Cactus Apple Surprise");
-TurnInQuestAt(9796,4402);  
 
-
----------Step end-----------
-
----- Step Count [576] ----
-CompleteObjectiveOfQuest(789,1)
----------Step end-----------
-
----- Step Count [581] ----
 CompleteObjectiveOfQuest(792,1)
 ---------Step end-----------
 
----- Step Count [594] ----
----------Step end-----------
-
----- Step Count [604] ----
 CompleteObjectiveOfQuest(792,1)
 ---------Step end-----------
 
----- Step Count [617] ----
----------Step end-----------
-
----- Step Count [625] ----
 CompleteObjectiveOfQuest(792,1)
 ---------Step end-----------
 
@@ -152,8 +150,7 @@ CompleteObjectiveOfQuest(789,1)
 ---- Step Count [637] ----
 ---------Step end-----------
 
----- Step Count [643] ----
-GrindAreaUntilLevel(4)
+
 ---------Step end-----------
 
 ---- Step Count [650] ----
@@ -165,24 +162,11 @@ TurnInQuestUsingDB(789);
 TurnInQuestUsingDB(789);
 ---------Step end-----------
 
----- Step Count [676] ----
-
----- Step Count [723] ----
----------Step end-----------
-
 ---- Step Count [748] ----
 TurnInQuestUsingDB(792);
 AcceptQuestUsingDB(794);
 ---------Step end-----------
 
----- Step Count [754] ----
-GrindAreaUntilLevel(4)
----------Step end-----------
-
----- Step Count [764] ----
-
----- Step Count [771] ----
-GrindAreaUntilLevel(4)
 CompleteObjectiveOfQuest(4402,1)
 GrindAreaUntilLevel(5)
 ---------Step end-----------
@@ -192,27 +176,25 @@ CompleteObjectiveOfQuest(1516,1)
 CompleteObjectiveOfQuest(794,1)
 ---------Step end-----------
 
----- Step Count [886] ----
----------Step end-----------
-
----- Step Count [891] ----
 GrindAreaUntilLevel(6)
----------Step end-----------
 
----- Step Count [919] ----
-AcceptQuestUsingDB(784);
----------Step end-----------
-
----- Step Count [949] ----
-AcceptQuestUsingDB(791);
----------Step end-----------
-
----- Step Count [1003] ----
-TurnInQuestUsingDB(4402);
+if HasPlayerFinishedQuest(794)==false then   --- Objective if
+  
+      Log("Player needs training!")
+      TrainAtNearestClassTrainer(); -- TrainMe  
+end -- HasSpell check
 ---------Step end-----------
 
 ---- Step Count [1014] ----
 TurnInQuestUsingDB(794);
+AcceptQuestUsingDB(784);
+---------Step end-----------
+AcceptQuestUsingDB(784);
+---- Step Count [949] ----
+AcceptQuestUsingDB(791);
+---------Step end-----------
+
+
 AcceptQuestUsingDB(805);
 ---------Step end-----------
 AcceptQuestUsingDB(2161);
@@ -248,8 +230,11 @@ Orgrimmar[1] = 3192;
 CollectOrgrimmar = CreateObjective("GatherObject",3,1,3,786,nil,TableToList(Orgrimmar));
 MyInfo = DoObjective(CollectOrgrimmar);
 ---------Step end-----------
-
----- Step Count [1478] ----
+if HasPlayerFinishedQuest(786)==false then   --- Objective if
+  
+      Log("Player needs training!")
+      TrainAtNearestClassTrainer(); -- TrainMe  
+end -- HasSpell check
 TurnInQuestUsingDB(786);
 ---------Step end-----------
 TurnInQuestUsingDB(2161);

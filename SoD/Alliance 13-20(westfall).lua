@@ -156,15 +156,15 @@ CompleteObjectiveOfQuest(14,3)
 
 TurnInQuestUsingDB(14);
 
-if (Player.Level <19) then 
-Log("Grind to 13");
+if (Player.Level <20) then 
+Log("Grind to 20");
 
 Grind = {};
 Grind[1] = 154;
 Grind[2] = 115;
 
 Grind = CreateObjective("KillMobsAndLoot",1,10,1,999,TableToList(Grind));
-GrindUntilLvl(19,Grind,true);
+GrindUntilLvl(20,Grind,true);
 end;
 Log("This is the end of Westfall questing profile");
 

@@ -62,12 +62,51 @@ Spider[1] = 442;
 KillLootSpider = CreateObjective("KillMobsAndLoot",3,5,3,92,TableToList(Spider));
 MyInfo = DoObjective(KillLootSpider);
 
-GrindAreaUntilLevel(20)
+GrindAreaUntilLevel(21)
+GrindAreaUntilLevel(21)
+GrindAreaUntilLevel(21)
 
 
 
 TurnInQuestUsingDB(92);
 TurnInQuestUsingDB(122);
+
+CompleteObjectiveOfQuest(246,1)
+CompleteObjectiveOfQuest(246,2)
+
+TurnInQuestUsingDB(246);
+
+CompleteObjectiveOfQuest(124,1)
+CompleteObjectiveOfQuest(124,2)
+
+CompleteObjectiveOfQuest(89,1)
+CompleteObjectiveOfQuest(89,2)
+
+
+
+TurnInQuestUsingDB(89);
+TurnInQuestUsingDB(124);
+TurnInQuestUsingDB(145);
+AcceptQuestUsingDB(144);
+AcceptQuestUsingDB(164);
+AcceptQuestUsingDB(245);
+AcceptQuestUsingDB(5);
+CompleteObjectiveOfQuest(245,1)
+TurnInQuestUsingDB(165);
+AcceptQuestUsingDB(148);
+
+TurnInQuestUsingDB(164);
+GrindAreaUntilLevel(22);
+AcceptQuestUsingDB(226);
+
+AcceptQuestFrom(311,95); 
+TurnInQuestUsingDB(165);
+AcceptQuestUsingDB(148);
+CompleteObjectiveOfQuest(226,1)
+CompleteObjectiveOfQuest(226,2)
+TurnInQuestUsingDB(226);
+TurnInQuestUsingDB(245);
+
 
 Log("This is the end of Redridge questing profile");
 
