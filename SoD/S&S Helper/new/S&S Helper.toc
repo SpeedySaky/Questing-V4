@@ -1,0 +1,32 @@
+## Author: Speedysaky(EU) & SuperSurf
+## Version: 1.1.0
+## Interface: 30400
+## Title: S&S Helper
+## Notes: Quality of life helper
+## SavedVariables: SSHelperDB
+
+#@no-lib-strip@
+Libs\Ace3\LibStub\LibStub.lua
+Libs\Ace3\CallbackHandler-1.0\CallbackHandler-1.0.xml
+Libs\Ace3\AceAddon-3.0\AceAddon-3.0.xml
+Libs\Ace3\AceConsole-3.0\AceConsole-3.0.xml
+Libs\Ace3\AceHook-3.0\AceHook-3.0.xml
+Libs\Ace3\AceEvent-3.0\AceEvent-3.0.xml
+Libs\Ace3\AceDB-3.0\AceDB-3.0.xml
+Libs\Ace3\AceDBOptions-3.0\AceDBOptions-3.0.xml
+Libs\Ace3\AceGUI-3.0\AceGUI-3.0.xml
+Libs\Ace3\AceConfig-3.0\AceConfig-3.0.xml
+Libs\Ace3\AceLocale-3.0\AceLocale-3.0.xml
+Libs\Ace3\AceComm-3.0\AceComm-3.0.xml
+Libs\Ace3\AceSerializer-3.0\AceSerializer-3.0.xml
+#@end-no-lib-strip@
+
+core.lua
+options.lua
+flightpaths.lua
+macros.lua
+questing.lua
+talents.lua
+gear.lua
+loot.lua
+autoloot.lua
