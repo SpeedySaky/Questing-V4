@@ -226,9 +226,11 @@ TurnInQuestUsingDB(344);
 
 TurnInQuestUsingDB(345);
 CompleteObjectiveOfQuest(347,1)
-GrindAreaUntilLevel(25)
 
 TurnInQuestUsingDB(347);
+TurnInQuestUsingDB(78);
+TurnInQuestUsingDB(158);
+
 CompleteObjectiveOfQuest(101,2)
 CompleteObjectiveOfQuest(101,1)
 
