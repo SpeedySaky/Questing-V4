@@ -5,6 +5,16 @@ SetQuestRepairAt(30)
 SetQuestSellAt(2)
 Player = GetPlayer();
 
+function InteractWithPilot() 
+local Objects = GetObjectList();
+  foreach Object in Objects do
+     if Object.Name == "A Dwarven Corpse" then
+          Log("Found the Pilot!");
+         InteractWithObject(Object);
+		 SleepPlugin(5000);
+      end; -- IF
+   end; -- For Each
+end;
 --This profile was auto-generated using MrFade's massive brain power.
 ---- Step Count [16] ----
 AcceptQuestUsingDB(179);
@@ -76,9 +86,48 @@ end
 TurnInQuestUsingDB(317)
 TurnInQuestUsingDB(384)
 TurnInQuestUsingDB(5541)
+GrindAreaUntilLevel(10)
+if HasPlayerFinishedQuest(412)==false and CanTurnInQuest(412)==true then   --- Objective if
+  
+      Log("Player needs training!")
+      TrainAtNearestClassTrainer(); -- TrainMe  
+end
+TurnInQuestUsingDB(412)
+TurnInQuestUsingDB(320)
+AcceptQuestUsingDB(432);
+AcceptQuestUsingDB(433);
+CompleteObjectiveOfQuest(432,1)
+CompleteObjectiveOfQuest(433,1)
+TurnInQuestUsingDB(432)
+TurnInQuestUsingDB(433)
+TurnInQuestUsingDB(413)
+AcceptQuestFrom(1960,419);
 
----- Step Count [29] ----
----------Step end-----------
+if HasPlayerFinishedQuest(419)==false then
+QuestGoToPoint(-5064.667,-2124.331,403.1526);
+   InteractWithPilot();
+	SleepPlugin(1000);
+end;
+if HasPlayerFinishedQuest(417)==false then
+
+Log("Doing A Pilot's Revenge");
+Claw = {}; 
+Claw[1] = 1961; 
+KillLootClaw = CreateObjective("KillMobsAndLoot",1,1,1,417,TableToList(Claw));
+MyInfo = DoObjective(KillLootClaw);
+end;
+
+TurnInQuestAt(1960,417);
+
+GrindAreaUntilLevel(12)
+
+AcceptQuestUsingDB(224);
+AcceptQuestUsingDB(267);
+CompleteObjectiveOfQuest(224,1)
+CompleteObjectiveOfQuest(224,2)
+CompleteObjectiveOfQuest(267,1)
+TurnInQuestUsingDB(224)
+TurnInQuestUsingDB(267)
 
 
 StopQuestProfile();
