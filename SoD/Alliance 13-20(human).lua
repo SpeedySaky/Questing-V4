@@ -58,14 +58,28 @@ TurnInQuestUsingDB(153);
 
 CompleteObjectiveOfQuest(22,1)
 TurnInQuestUsingDB(22);
-CompleteObjectiveOfQuest(151,1)
-TurnInQuestUsingDB(151);
+GrindAreaUntilLevel(14)
+AcceptQuestUsingDB(6181);
+TurnInQuestUsingDB(6181);
+Log("Taking Hogger");
+AcceptQuestFrom(156561,176);  
+CompleteObjectiveOfQuest(11,1)
+TurnInQuestUsingDB(11);
 
-CompleteObjectiveOfQuest(38,1)
-CompleteObjectiveOfQuest(64,1)
-CompleteObjectiveOfQuest(9,1)
+TurnInQuestUsingDB(6281);
 
+
+if HasPlayerFinishedQuest(6281)==true and CanTurnInQuest(6261)==true then   --- Objective if
+  
+      Log("Player needs training!")
+      TrainAtNearestClassTrainer(); -- TrainMe  
+end -- HasSpell check
+TurnInQuestUsingDB(6261);
+CompleteObjectiveOfQuest(176,1)
+
+TurnInQuestUsingDB(6285);
 CompleteObjectiveOfQuest(38,1)
+
 if HasPlayerFinishedQuest(38)== false and CanTurnInQuest(38)==false then
 Log("Doing Murlocs");
 
@@ -77,11 +91,15 @@ end;
 CompleteObjectiveOfQuest(38,3)
 CompleteObjectiveOfQuest(38,4)
 
-CompleteObjectiveOfQuest(11,1)
----------Step end-----------
 
----- Step Count [1799] ----
-TurnInQuestUsingDB(11);
+CompleteObjectiveOfQuest(151,1)
+TurnInQuestUsingDB(151);
+
+CompleteObjectiveOfQuest(64,1)
+CompleteObjectiveOfQuest(9,1)
+
+CompleteObjectiveOfQuest(38,1)
+
 
 AcceptQuestUsingDB(239);
 
@@ -99,13 +117,9 @@ CompleteObjectiveOfQuest(13,2)
 CompleteObjectiveOfQuest(399,1)
 TurnInQuestUsingDB(13);
 TurnInQuestUsingDB(6181);
-Log("Taking Hogger");
-AcceptQuestFrom(156561,176);  
-CompleteObjectiveOfQuest(176,1)
 TurnInQuestUsingDB(176);
 TurnInQuestUsingDB(6281);
 TurnInQuestUsingDB(399);
-TurnInQuestUsingDB(6261);
 AcceptQuestUsingDB(244);
 TurnInQuestUsingDB(244);
 if IsOnQuest(65)==true  and HasPlayerFinishedQuest(65)== false then
