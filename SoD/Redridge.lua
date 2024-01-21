@@ -215,11 +215,6 @@ TurnInQuestUsingDB(75);
 
 AcceptQuestUsingDB(343);
 
-if HasPlayerFinishedQuest(343)==false then   --- Objective if
-  
-      Log("Player needs training!")
-      TrainAtNearestClassTrainer(); -- TrainMe  
-end 
 TurnInQuestUsingDB(343);
 TurnInQuestUsingDB(344);
 
