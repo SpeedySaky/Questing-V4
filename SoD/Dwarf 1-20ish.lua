@@ -403,9 +403,14 @@ AcceptQuestUsingDB(468);
 TurnInQuestUsingDB(468)
 
 CompleteObjectiveOfQuest(455,1)
-CompleteObjectiveOfQuest(455,1)
+CompleteObjectiveOfQuest(455,2)
+
 AcceptQuestUsingDB(469);
 TurnInQuestUsingDB(161)
+TurnInQuestUsingDB(274)
+TurnInQuestUsingDB(455)
+TurnInQuestUsingDB(484)
+TurnInQuestUsingDB(469)
 
 
 StopQuestProfile();

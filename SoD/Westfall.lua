@@ -5,33 +5,9 @@ SetQuestRepairAt(30)
 SetQuestSellAt(2)
 Player = GetPlayer();
 
-AddNameToAvoidWhiteList("Defias Trapper");
-AddNameToAvoidWhiteList("Defias Smuggler");
 
 
-if (HasPlayerFinishedQuest(46)==false) then 
-
-Log("Finishing Elwynn");
-end;
-
-AcceptQuestUsingDB(46);
-CompleteObjectiveOfQuest(46,1)
-TurnInQuestUsingDB(46);
-
-if (HasPlayerFinishedQuest(61)==false) then 
-
-Log("Going Stormwind to turn in and get quests");
-end;
-
-TurnInQuestUsingDB(61);
-TurnInQuestUsingDB(1097);
 AcceptQuestUsingDB(399);
-
-if (HasPlayerFinishedQuest(61)==false) then 
-
-Log("Going to Westfall");
-end;
-
 AcceptQuestUsingDB(36);
 AcceptQuestUsingDB(151);
 AcceptQuestUsingDB(64);
@@ -58,14 +34,21 @@ TurnInQuestUsingDB(153);
 
 CompleteObjectiveOfQuest(22,1)
 TurnInQuestUsingDB(22);
-CompleteObjectiveOfQuest(151,1)
-TurnInQuestUsingDB(151);
+GrindAreaUntilLevel(14)
+AcceptQuestUsingDB(6181);
+TurnInQuestUsingDB(6181);
 
-CompleteObjectiveOfQuest(38,1)
-CompleteObjectiveOfQuest(64,1)
-CompleteObjectiveOfQuest(9,1)
+TurnInQuestUsingDB(6281);
+if HasPlayerFinishedQuest(6281)==true and CanTurnInQuest(6261)==true then   --- Objective if
+  
+      Log("Player needs training!")
+      TrainAtNearestClassTrainer(); -- TrainMe  
+end -- HasSpell check
+TurnInQuestUsingDB(6261);
 
+TurnInQuestUsingDB(6285);
 CompleteObjectiveOfQuest(38,1)
+
 if HasPlayerFinishedQuest(38)== false and CanTurnInQuest(38)==false then
 Log("Doing Murlocs");
 
@@ -76,38 +59,36 @@ MyInfo = DoObjective(KillLootMurlocs);
 end;
 CompleteObjectiveOfQuest(38,3)
 CompleteObjectiveOfQuest(38,4)
-
-CompleteObjectiveOfQuest(11,1)
----------Step end-----------
-
----- Step Count [1799] ----
-TurnInQuestUsingDB(11);
-
-AcceptQuestUsingDB(239);
-
-TurnInQuestUsingDB(22);
 TurnInQuestUsingDB(38);
-CompleteObjectiveOfQuest(151,1)
-TurnInQuestUsingDB(151);
+CompleteObjectiveOfQuest(9,1)
 
-GrindAreaUntilLevel(16)
+TurnInQuestUsingDB(9);
+CompleteObjectiveOfQuest(64,1)
 TurnInQuestUsingDB(64);
-CompleteObjectiveOfQuest(102,1)
-TurnInQuestUsingDB(102);
+
+
 CompleteObjectiveOfQuest(13,1)
 CompleteObjectiveOfQuest(13,2)
 CompleteObjectiveOfQuest(399,1)
+CompleteObjectiveOfQuest(151,1)
 TurnInQuestUsingDB(13);
-TurnInQuestUsingDB(6181);
-Log("Taking Hogger");
-AcceptQuestFrom(156561,176);  
-CompleteObjectiveOfQuest(176,1)
-TurnInQuestUsingDB(176);
-TurnInQuestUsingDB(6281);
+
+TurnInQuestUsingDB(151);
+CompleteObjectiveOfQuest(102,1)
+GrindAreaUntilLevel(16)
+
+TurnInQuestUsingDB(102);
+
 TurnInQuestUsingDB(399);
-TurnInQuestUsingDB(6261);
+
+if HasPlayerFinishedQuest(244)==false then   --- Objective if
+  
+      Log("Player needs training!")
+      TrainAtNearestClassTrainer(); -- TrainMe  
+end -- HasSpell check
 AcceptQuestUsingDB(244);
 TurnInQuestUsingDB(244);
+
 if IsOnQuest(65)==true  and HasPlayerFinishedQuest(65)== false then
 QuestGoToPoint(-9223.782,-2163.917,63.73137);
 		 SendKey(37, 300);
@@ -154,7 +135,6 @@ CompleteObjectiveOfQuest(14,1)
 CompleteObjectiveOfQuest(14,2)
 CompleteObjectiveOfQuest(14,3)
 
-TurnInQuestUsingDB(14);
 
 if (Player.Level <20) then 
 Log("Grind to 20");
@@ -166,6 +146,29 @@ Grind[2] = 115;
 Grind = CreateObjective("KillMobsAndLoot",1,10,1,999,TableToList(Grind));
 GrindUntilLvl(20,Grind,true);
 end;
-Log("This is the end of Westfall questing profile");
+AcceptQuestUsingDB(5);
+TurnInQuestUsingDB(14);
+
+Log("Going to SW");
+
+TurnInQuestUsingDB(135);
+
+if HasPlayerFinishedQuest(141)==false then   --- Objective if
+  
+      Log("Player needs training lvl 20!")
+      TrainAtNearestClassTrainer(); -- TrainMe  
+end -- HasSpell check
+
+
+
+Log("Going to Westfall");
+TurnInQuestUsingDB(141);
+
+
+CompleteObjectiveOfQuest(142,1)
+TurnInQuestUsingDB(142);
+
+Log("That is all about Westfall!")
+
 
 StopQuestProfile();
