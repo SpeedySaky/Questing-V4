@@ -190,7 +190,6 @@ TurnInQuestUsingDB(418)    --- Objective if
  if HasPlayerFinishedQuest(416)==false  then   --- Objective if
  
 Log("Turning!")
-SendKey(40,3000);
 SleepPlugin(1000);
 QuestGoToPoint(-5343.623,-2980.413,324.1577);
 end
@@ -348,22 +347,65 @@ TurnInQuestUsingDB(237)
 AcceptQuestUsingDB(263);
 CompleteObjectiveOfQuest(263,1)
 CompleteObjectiveOfQuest(263,2)
+TurnInQuestUsingDB(263)
+AcceptQuestUsingDB(217);
+
 AcceptQuestUsingDB(250);
-TurnInQuestAt(257,250);
+if HasPlayerFinishedQuest(250)== false and CanTurnInQuest(250)==false then 
+Log("Going for Barrel");
+
+QuestGoToPoint(-4728.51,-3541.705,303.64);
+SleepPlugin(1000);
+InteractBarrel();
+
+end;
+
+
+
+GrindAreaUntilLevel(18)
+TurnInQuestUsingDB(301)
+
+if HasPlayerFinishedQuest(302)==false and IsOnQuest(302)==true then   --- Objective if
+  
+      Log("Player needs training!")
+      TrainAtNearestClassTrainer(); -- TrainMe  
+end
+TurnInQuestUsingDB(302)
+TurnInQuestUsingDB(273)
+TurnInQuestUsingDB(454)
+
 TurnInQuestUsingDB(199)
 CompleteObjectiveOfQuest(385,1)
 CompleteObjectiveOfQuest(385,2)
+CompleteObjectiveOfQuest(2038,1)
+CompleteObjectiveOfQuest(2038,2)
+CompleteObjectiveOfQuest(2038,3)
+CompleteObjectiveOfQuest(2038,4)
+TurnInQuestUsingDB(2038)
+GrindAreaUntilLevel(19)
 TurnInQuestUsingDB(385)
-
-	 AcceptQuestUsingDB(257);
+AcceptQuestUsingDB(257);
 CompleteObjectiveOfQuest(257,1)
 TurnInQuestUsingDB(257)
 AcceptQuestUsingDB(258);
 CompleteObjectiveOfQuest(258,1)
 TurnInQuestUsingDB(258)
+CompleteObjectiveOfQuest(297,1)
+TurnInQuestUsingDB(297)
+ if HasPlayerFinishedQuest(468)==false  then   --- Objective if
+ 
+Log("Getting quest!")
+SleepPlugin(1000);
+QuestGoToPoint(-5343.623,-2980.413,324.1577);
+end
+AcceptQuestUsingDB(468);
 
+TurnInQuestUsingDB(468)
 
-
+CompleteObjectiveOfQuest(455,1)
+CompleteObjectiveOfQuest(455,1)
+AcceptQuestUsingDB(469);
+TurnInQuestUsingDB(161)
 
 
 StopQuestProfile();
