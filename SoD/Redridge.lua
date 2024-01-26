@@ -32,6 +32,8 @@ TurnInQuestUsingDB(142);
 
 
 Log("Going to Redridge");
+AcceptQuestUsingDB(244);
+TurnInQuestUsingDB(244);
 
 TurnInQuestUsingDB(119);
 TurnInQuestUsingDB(121);
@@ -52,6 +54,12 @@ TurnInQuestUsingDB(143);
 TurnInQuestUsingDB(144);
 TurnInQuestUsingDB(131);
 AcceptQuestUsingDB(122);
+AcceptQuestUsingDB(118);
+TurnInQuestUsingDB(118);
+TurnInQuestUsingDB(119);
+
+CompleteObjectiveOfQuest(122,1)
+
 
 Log("Doing Reddridge Goulash");
 
@@ -73,9 +81,6 @@ Spider[1] = 442;
 KillLootSpider = CreateObjective("KillMobsAndLoot",3,5,3,92,TableToList(Spider));
 MyInfo = DoObjective(KillLootSpider);
 
-GrindAreaUntilLevel(21)
-GrindAreaUntilLevel(21)
-GrindAreaUntilLevel(21)
 
 
 
@@ -93,6 +98,10 @@ CompleteObjectiveOfQuest(124,2)
 CompleteObjectiveOfQuest(89,1)
 CompleteObjectiveOfQuest(89,2)
 
+AcceptQuestUsingDB(129);
+TurnInQuestUsingDB(129);
+TurnInQuestUsingDB(130);
+TurnInQuestUsingDB(131);
 
 
 TurnInQuestUsingDB(89);
@@ -130,6 +139,8 @@ AcceptQuestUsingDB(127);
 AcceptQuestUsingDB(91);
 TurnInQuestUsingDB(146);
 AcceptQuestUsingDB(128);
+AcceptQuestFrom(313,94); 
+
 CompleteObjectiveOfQuest(150,1)
 CompleteObjectiveOfQuest(127,1)
 if HasPlayerFinishedQuest(20)==false then   --- Objective if
@@ -141,6 +152,8 @@ Axes[2] = 485;
 KillLootAxes = CreateObjective("KillMobsAndLoot",1,10,1,20,TableToList(Axes));
 MyInfo = DoObjective(KillLootAxes);
 end;
+TurnInQuestAt(31,94);    --- The Defias Brotherhood
+
 TurnInQuestUsingDB(150);
 TurnInQuestUsingDB(127);
 TurnInQuestUsingDB(20);
@@ -163,50 +176,6 @@ TurnInQuestUsingDB(68);
 TurnInQuestUsingDB(154);
 TurnInQuestUsingDB(157);
 TurnInQuestUsingDB(69);
-if HasPlayerFinishedQuest(70)==false and CanTurnInQuest(70)==false then
-Log("Lets go up");   --- Objective if
-QuestGoToPoint(-9477.151,23.9494,56.33975);
-SleepPlugin(1000);
-SendKey(38,2000);
-SleepPlugin(1000);
-SendKey(37,500);
-SleepPlugin(1000);
-SendKey(38,1000);
-SleepPlugin(1000);
-SendKey(37,500);
-SleepPlugin(1000);
-SendKey(38,2000);
-SleepPlugin(1000);
-
-CompleteObjectiveOfQuest(70,1)
-end;
-
-if HasPlayerFinishedQuest(70)==false and CanTurnInQuest(70)==true then   --- Objective if
-Log("Lets go down");   --- Objective if
-
-QuestGoToPoint(-9471.4,23.45249,63.82101);
-SleepPlugin(1000);
-SendKey(37,500);
-SleepPlugin(1000);
-SendKey(38,2000);
-SleepPlugin(1000);
-SendKey(39,600);
-SleepPlugin(1000);
-SendKey(38,500);
-SleepPlugin(1000);
-SendKey(39,500);
-SleepPlugin(1000);
-SendKey(38,500);
-SleepPlugin(2000);
-
-end;
-TurnInQuestUsingDB(70);
-
-
-if HasPlayerFinishedQuest(72)==false then
-Log("Stalvan");   --- Objective if
-Stalvan();
-end;
 
 TurnInQuestUsingDB(74);
 
