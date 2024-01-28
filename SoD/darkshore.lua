@@ -35,7 +35,10 @@ CompleteObjectiveOfQuest(956,1)
 TurnInQuestUsingDB(956);
 GrindAreaUntilLevel(14)
 
+if HasPlayerFinishedQuest(958) == false  then
+
 CompleteObjectiveOfQuest(958,1)
+end
 CompleteObjectiveOfQuest(957,1)
 AcceptQuestUsingDB(953);
 CompleteObjectiveOfQuest(953,1)

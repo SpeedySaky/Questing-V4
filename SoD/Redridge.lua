@@ -192,11 +192,7 @@ TurnInQuestUsingDB(345);
 CompleteObjectiveOfQuest(347,1)
 
 TurnInQuestUsingDB(347);
-CompleteObjectiveOfQuest(57,1)
-CompleteObjectiveOfQuest(57,2)
-CompleteObjectiveOfQuest(101,1)
-CompleteObjectiveOfQuest(101,2)
-CompleteObjectiveOfQuest(101,3)
+
 
 TurnInQuestUsingDB(78);
 TurnInQuestUsingDB(158);
