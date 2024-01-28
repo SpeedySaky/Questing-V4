@@ -89,14 +89,19 @@ TurnInQuestUsingDB(122);
 
 CompleteObjectiveOfQuest(246,1)
 CompleteObjectiveOfQuest(246,2)
+GrindAreaUntilLevel(22)
+GrindAreaUntilLevel(22)
 
 TurnInQuestUsingDB(246);
+GrindAreaUntilLevel(22)
+GrindAreaUntilLevel(22)
+CompleteObjectiveOfQuest(89,1)
+CompleteObjectiveOfQuest(89,2)
 
 CompleteObjectiveOfQuest(124,1)
 CompleteObjectiveOfQuest(124,2)
 
-CompleteObjectiveOfQuest(89,1)
-CompleteObjectiveOfQuest(89,2)
+
 
 AcceptQuestUsingDB(129);
 TurnInQuestUsingDB(129);
@@ -107,30 +112,9 @@ TurnInQuestUsingDB(131);
 TurnInQuestUsingDB(89);
 TurnInQuestUsingDB(124);
 TurnInQuestUsingDB(145);
+TurnInQuestUsingDB(5);
 AcceptQuestUsingDB(144);
 AcceptQuestUsingDB(164);
-AcceptQuestUsingDB(245);
-AcceptQuestUsingDB(5);
-CompleteObjectiveOfQuest(245,1)
-TurnInQuestUsingDB(165);
-AcceptQuestUsingDB(148);
-
-TurnInQuestUsingDB(164);
-GrindAreaUntilLevel(22);
-AcceptQuestUsingDB(226);
-
-AcceptQuestFrom(311,95); 
-TurnInQuestUsingDB(165);
-AcceptQuestUsingDB(148);
-CompleteObjectiveOfQuest(226,1)
-CompleteObjectiveOfQuest(226,2)
-TurnInQuestUsingDB(226);
-TurnInQuestUsingDB(245);
-TurnInQuestUsingDB(5);
-TurnInQuestUsingDB(148);
-TurnInQuestUsingDB(66);
-TurnInQuestUsingDB(149);
-TurnInQuestUsingDB(240);
 
 AcceptQuestFrom(313,94); 
 AcceptQuestUsingDB(20);
@@ -162,40 +146,12 @@ TurnInQuestUsingDB(34);
 TurnInQuestAt(3643,67);  
 TurnInQuestUsingDB(154);
 TurnInQuestAt(267,68);  
-AcceptQuestUsingDB(56);
-CompleteObjectiveOfQuest(56,2)
-CompleteObjectiveOfQuest(56,1)
 
 
-GrindAreaUntilLevel(24)
+CompleteObjectiveOfQuest(91,1)
+TurnInQuestUsingDB(91);
+TurnInQuestUsingDB(178);
 
-TurnInQuestUsingDB(56);
-
-
-TurnInQuestUsingDB(68);
-TurnInQuestUsingDB(154);
-TurnInQuestUsingDB(157);
-TurnInQuestUsingDB(69);
-
-TurnInQuestUsingDB(74);
-
-CompleteObjectiveOfQuest(75,1)
-TurnInQuestUsingDB(75);
-
-AcceptQuestUsingDB(343);
-
-TurnInQuestUsingDB(343);
-TurnInQuestUsingDB(344);
-
-
-TurnInQuestUsingDB(345);
-CompleteObjectiveOfQuest(347,1)
-
-TurnInQuestUsingDB(347);
-
-
-TurnInQuestUsingDB(78);
-TurnInQuestUsingDB(158);
 
 
 
