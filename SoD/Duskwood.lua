@@ -108,6 +108,7 @@ TurnInQuestUsingDB(74);
 
 CompleteObjectiveOfQuest(75,1)
 TurnInQuestUsingDB(75);
+TurnInQuestUsingDB(337);
 AcceptQuestUsingDB(343);
 
 if HasPlayerFinishedQuest(343)==false then   --- Objective if
