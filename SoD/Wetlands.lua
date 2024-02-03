@@ -75,6 +75,7 @@ TurnInQuestUsingDB(295)
 TurnInQuestUsingDB(299)
 
 if HasPlayerFinishedQuest(281)==false then 
+Log("Going for murloc area quests")
 
 QuestGoToPoint(-3292.004,-950.7999,9.083661);
 SleepPlugin(2000);
@@ -82,9 +83,11 @@ Barrel();
 end;
 TurnInQuestAt(142151,284);  
 TurnInQuestAt(259,285);  
-TurnInQuestUsingDB(286)
+TurnInQuestAt(1242,286);
 CompleteObjectiveOfQuest(464,1)
 TurnInQuestUsingDB(464)
+AcceptQuestUsingDB(472);
+TurnInQuestUsingDB(472)
 
 
 

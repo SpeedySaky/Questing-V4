@@ -382,6 +382,7 @@ local QuestItemToQuestId = {
 	[36856] = 12147, -- Emblazoned Battle Horn
 	[1370] = 123, -- The Collector
 	[1962] = 178, -- Glowing Shadowhide Pendant
+	[2839] = 361, -- Letters to Ivette
 
 }
 

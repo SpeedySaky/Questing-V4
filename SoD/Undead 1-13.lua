@@ -111,6 +111,8 @@ CompleteObjectiveOfQuest(426,2)
 CompleteObjectiveOfQuest(362,1)
 GrindAreaUntilLevel(10)
 TurnInQuestUsingDB(426);
+TurnInQuestUsingDB(361);
+TurnInQuestUsingDB(362);
 
 CompleteObjectiveOfQuest(370,1)
 CompleteObjectiveOfQuest(370,2)
@@ -118,6 +120,42 @@ CompleteObjectiveOfQuest(370,3)
 CompleteObjectiveOfQuest(374,1)
 TurnInQuestUsingDB(370);
 TurnInQuestUsingDB(374);
+TurnInQuestUsingDB(359);
+TurnInQuestUsingDB(360);
+CompleteObjectiveOfQuest(357,1)
+CompleteObjectiveOfQuest(356,1)
+CompleteObjectiveOfQuest(356,2)
+TurnInQuestUsingDB(356);
+TurnInQuestUsingDB(357);
+if HasPlayerFinishedQuest(366)==false then   --- Objective if
+  
+      Log("Player needs training!")
+      TrainAtNearestClassTrainer(); -- TrainMe  
+end 
+
+TurnInQuestUsingDB(366);
+CompleteObjectiveOfQuest(354,1)
+CompleteObjectiveOfQuest(354,2)
+CompleteObjectiveOfQuest(354,3)
+CompleteObjectiveOfQuest(368,1)
+TurnInQuestUsingDB(368);
+TurnInQuestUsingDB(354);
+TurnInQuestUsingDB(355);
+CompleteObjectiveOfQuest(369,1)
+CompleteObjectiveOfQuest(371,2)
+CompleteObjectiveOfQuest(371,1)
+TurnInQuestUsingDB(369);
+TurnInQuestUsingDB(371);
+TurnInQuestUsingDB(492);
+CompleteObjectiveOfQuest(408,1)
+CompleteObjectiveOfQuest(408,2)
+CompleteObjectiveOfQuest(408,3)
+TurnInQuestUsingDB(408);
+CompleteObjectiveOfQuest(372,2)
+CompleteObjectiveOfQuest(372,1)
+TurnInQuestUsingDB(372);
+
+TurnInQuestUsingDB(445);
 
 Log("This is the end of Tirisfal Glades questing profile");
 
