@@ -128,10 +128,42 @@ TurnInQuestUsingDB(78);
 TurnInQuestUsingDB(158);
 TurnInQuestUsingDB(57);
 TurnInQuestUsingDB(101);
+AcceptQuestUsingDB(173);
+CompleteObjectiveOfQuest(173,1)
+TurnInQuestUsingDB(173);
+CompleteObjectiveOfQuest(133,1)
+TurnInQuestUsingDB(133);
+GrindAreaUntilLevel(28)
 
+Log("Doing Ogre Thieves");
 
+Thieves = {};
+Thieves[1] = 119;
+CollectThieves = CreateObjective("GatherObject",1,1,1,134,nil,TableToList(Thieves));
+MyInfo = DoObjective(CollectThieves);
 
+Log("Turning Ogre Thieves");
+TurnInQuestAt(289,134);
+TurnInQuestUsingDB(160);
+TurnInQuestUsingDB(251);
+AcceptQuestUsingDB(401);
+TurnInQuestUsingDB(401);
+AcceptQuestUsingDB(252);
+TurnInQuestUsingDB(252);
+CompleteObjectiveOfQuest(323,1)
+CompleteObjectiveOfQuest(323,2)
+CompleteObjectiveOfQuest(323,3)
+TurnInQuestUsingDB(323);
+CompleteObjectiveOfQuest(58,1)
 
+TurnInQuestUsingDB(58);
+
+CompleteObjectiveOfQuest(221,1)
+TurnInQuestUsingDB(221);
+CompleteObjectiveOfQuest(222,1)
+CompleteObjectiveOfQuest(222,2)
+
+TurnInQuestUsingDB(222);
 
 
 
