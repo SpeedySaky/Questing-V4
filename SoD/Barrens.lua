@@ -5,7 +5,16 @@ SetQuestRepairAt(30)
 SetQuestSellAt(2)
 Player = GetPlayer();
 
-
+function Wanted()
+local Objects = GetObjectList();
+  foreach Object in Objects do
+     if Object.Name == "WANTED" then
+          Log("Found WANTED");
+         InteractWithObject(Object);
+		 SleepPlugin(3000);
+      end; -- IF
+   end; -- For Each
+end;
 AcceptQuestUsingDB(840);
 
 TurnInQuestUsingDB(840);
@@ -127,6 +136,161 @@ end;
 
 Log("Turn The Stagnant Oasis");
 TurnInQuestAt(3448,877);
+
+AcceptQuestUsingDB(865);
+AcceptQuestUsingDB(887);
+
+AcceptQuestFrom(3442,894);
+
+if IsOnQuest(895)==false and HasPlayerFinishedQuest(895)==false then
+Log("Take WANTED: Baron Longshore");
+QuestGoToPoint(-923.6127,-3720.682,9.170465);
+Wanted();
+SleepPlugin(2000);
+end;
+AcceptQuestUsingDB(1069);
+AcceptQuestUsingDB(891);
+CompleteObjectiveOfQuest(887,1)
+CompleteObjectiveOfQuest(887,2)
+TurnInQuestUsingDB(887);
+TurnInQuestUsingDB(890);
+TurnInQuestUsingDB(892);
+CompleteObjectiveOfQuest(880,1)
+CompleteObjectiveOfQuest(875,1)
+TurnInQuestUsingDB(880);
+TurnInQuestUsingDB(875);
+GrindAreaUntilLevel(17)
+AcceptQuestUsingDB(6541);
+TurnInQuestUsingDB(6541);
+CompleteObjectiveOfQuest(888,1)
+CompleteObjectiveOfQuest(888,2)
+TurnInQuestUsingDB(888);
+
+Log("Doing WANTED: Baron Longshore");
+
+Baron = {};
+Baron[1] = 3467;
+KillLootBaron = CreateObjective("KillMobsAndLoot",1,1,1,895,TableToList(Baron));
+
+
+MyInfo = DoObjective(KillLootBaron);
+
+TurnInQuestAt(3391,895);
+
+CompleteObjectiveOfQuest(865,1)
+CompleteObjectiveOfQuest(3281,1)
+TurnInQuestUsingDB(865);
+TurnInQuestUsingDB(3281);
+
+CompleteObjectiveOfQuest(896,1)
+GrindAreaUntilLevel(18)
+
+TurnInQuestUsingDB(896);
+TurnInQuestUsingDB(3281);
+
+
+
+TurnInQuestAt(4141,894);
+Log("Doing Samophlange1");
+
+Fuel = {};
+Fuel[1] = 4072;
+CollectFuel = CreateObjective("GatherObject",1,1,3,900,nil,TableToList(Fuel));
+MyInfo = DoObjective(CollectFuel);
+
+Main = {};
+Main[1] = 61936;
+CollectMain = CreateObjective("GatherObject",2,1,3,900,nil,TableToList(Main));
+MyInfo = DoObjective(CollectMain);
+
+Regulator = {};
+Regulator[1] = 61935;
+CollectRegulator = CreateObjective("GatherObject",3,1,3,900,nil,TableToList(Regulator));
+MyInfo = DoObjective(CollectRegulator);
+
+TurnInQuestAt(4141,900);
+Log("Doing Samophlange3");
+
+Key = {};
+Key[1] = 3471;
+KillLootKey = CreateObjective("KillMobsAndLoot",1,1,1,901,TableToList(Key));
+MyInfo = DoObjective(KillLootKey);
+TurnInQuestAt(4141,901);
+TurnInQuestAt(3442,902);
+CompleteObjectiveOfQuest(850,1)
+TurnInQuestUsingDB(850);
+TurnInQuestUsingDB(3921);
+CompleteObjectiveOfQuest(3922,1)
+TurnInQuestUsingDB(3922);
+
+
+
+function Yellow()
+local Objects = GetObjectList();
+  foreach Object in Objects do
+     if Object.Name == "Yellow Raptor Nest" then
+          Log("Found Yellow Raptor Nest");
+         InteractWithObject(Object);
+		 SleepPlugin(3000);
+      end; -- IF
+   end; -- For Each
+end;
+
+function Red()
+local Objects = GetObjectList();
+  foreach Object in Objects do
+     if Object.Name == "Red Raptor Nest" then
+          Log("Found Red Raptor Nest");
+         InteractWithObject(Object);
+		 SleepPlugin(3000);
+      end; -- IF
+   end; -- For Each
+end;
+
+function Blue()
+local Objects = GetObjectList();
+  foreach Object in Objects do
+     if Object.Name == "Blue Raptor Nest" then
+          Log("Found Blue Raptor Nest");
+         InteractWithObject(Object);
+		 SleepPlugin(3000);
+      end; -- IF
+   end; -- For Each
+end;
+
+if CanTurnInQuest(905)==false and HasPlayerFinishedQuest(905)==false then
+
+Log("Doing The Angry Scytheclaws");
+
+Log("Getting Blue");
+QuestGoToPoint(-1505.228,-2706.944,92.830544);
+Blue();
+SleepPlugin(5000);
+Blue = {};
+Blue[1] = 6907;
+CollectBlue = CreateObjective("GatherObject",1,1,3,905,nil,TableToList(Blue));
+MyInfo = DoObjective(CollectBlue);
+
+Log("Getting Yellow");
+QuestGoToPoint(-1513.109,-2638.047,91.84564);
+Yellow();
+SleepPlugin(5000);
+Yellow = {};
+Yellow[1] = 6908;
+CollectYellow = CreateObjective("GatherObject",2,1,3,905,nil,TableToList(Yellow));
+MyInfo = DoObjective(CollectYellow);
+
+Log("Getting Red");
+QuestGoToPoint(-1533.395,-2687.135,91.50989);
+Red();
+SleepPlugin(5000);
+Red = {};
+Red[1] = 6906;
+CollectRed = CreateObjective("GatherObject",3,1,3,905,nil,TableToList(Red));
+MyInfo = DoObjective(CollectRed);
+
+end;TurnInQuestUsingDB(905);
+
 
 
 Log("This is the end of Barrens questing profile");

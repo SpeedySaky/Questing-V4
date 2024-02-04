@@ -164,8 +164,27 @@ CompleteObjectiveOfQuest(222,1)
 CompleteObjectiveOfQuest(222,2)
 
 TurnInQuestUsingDB(222);
+TurnInQuestUsingDB(223);
+TurnInQuestUsingDB(269);
+AcceptQuestUsingDB(1274);
 
 
+
+if HasPlayerFinishedQuest(1274)==false then
+ Log("Player needs training !")
+      TrainAtNearestClassTrainer();
+
+end;
+TurnInQuestUsingDB(1274);
+TurnInQuestUsingDB(1241);
+TurnInQuestUsingDB(1242);
+TurnInQuestUsingDB(1243);
+CompleteObjectiveOfQuest(1244,1)
+TurnInQuestUsingDB(1244);
+TurnInQuestUsingDB(1245);
+TurnInQuestUsingDB(1246);
+TurnInQuestUsingDB(1447);
+TurnInQuestUsingDB(1247);
 
 Log("This is the end of Duskwood questing profile");
 

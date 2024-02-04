@@ -151,7 +151,11 @@ TurnInQuestAt(267,68);
 CompleteObjectiveOfQuest(91,1)
 TurnInQuestUsingDB(91);
 TurnInQuestUsingDB(178);
-
+TurnInQuestUsingDB(346);
+CompleteObjectiveOfQuest(128,1)
+CompleteObjectiveOfQuest(126,1)
+TurnInQuestUsingDB(128);
+TurnInQuestUsingDB(126);
 
 
 

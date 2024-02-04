@@ -1,0 +1,97 @@
+[
+  {
+    "ProfileType": "Gather",
+    "GatherDistance": 0,
+    "GatherWhiteList": "",
+    "CombatWhiteList": "Black Ravager Mastiff,Nightbane Shadow Weaver,Nightbane Dark Runner,Nightbane Worgen",
+    "CombatRadius": 40,
+    "AutoTarget": true,
+    "AutoLoot": true,
+    "AutoSkin": false,
+    "LoopUntilStopped": true,
+    "BlackListedAreas": [],
+    "BlackListCount": 0,
+    "Bones": [
+      [
+        -10289.0459,
+        -852.4975,
+        41.8392563
+      ],
+      [
+        -10446.6807,
+        -841.8895,
+        50.9922
+      ],
+      [
+        -10558.2285,
+        -812.831543,
+        53.73941
+      ],
+      [
+        -10614.2422,
+        -825.8649,
+        51.2116432
+      ],
+      [
+        -10598.6338,
+        -881.489136,
+        51.078228
+      ],
+      [
+        -10581.334,
+        -949.140137,
+        49.10577
+      ],
+      [
+        -10532.5586,
+        -984.9863,
+        48.64806
+      ],
+      [
+        -10475.126,
+        -967.81134,
+        45.468502
+      ],
+      [
+        -10402.0469,
+        -957.7966,
+        45.9075356
+      ],
+      [
+        -10322.6875,
+        -945.458862,
+        42.474678
+      ]
+    ],
+    "BoneCount": 10,
+    "RepairAtVendor": true,
+    "RepairVendorName": "Avette Fellwood",
+    "RepairAt": 30,
+    "RepairVendorVec": {
+      "X": -10516.2539,
+      "Y": -1138.541,
+      "Z": 26.2681637
+    },
+    "SellGrays": false,
+    "SellGraysAt": 2,
+    "SellVendorName": "Avette Fellwood",
+    "SellVendorVec": {
+      "X": -10516.2539,
+      "Y": -1138.541,
+      "Z": 26.2681637
+    },
+    "UseSellVendor": true,
+    "PurchaseAmount": 1,
+    "PurchaseVendorName": null,
+    "PurchaseVendorVec": {
+      "X": 0.0,
+      "Y": 0.0,
+      "Z": 0.0
+    },
+    "UsePurchaseVendor": false,
+    "ItemToPurchase": null,
+    "FlightPath": false,
+    "FlightPathVectorCount": 0,
+    "FlightPathVectors": []
+  }
+]

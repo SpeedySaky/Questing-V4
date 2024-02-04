@@ -88,10 +88,11 @@ CompleteObjectiveOfQuest(464,1)
 TurnInQuestUsingDB(464)
 AcceptQuestUsingDB(472);
 TurnInQuestUsingDB(472)
+TurnInQuestUsingDB(270)
 
-
-
-
+TurnInQuestUsingDB(1248)
+CompleteObjectiveOfQuest(296,1)
+TurnInQuestUsingDB(296)
 
 Log("That is all for Wetlands")
 
