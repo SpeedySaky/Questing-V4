@@ -289,7 +289,65 @@ Red[1] = 6906;
 CollectRed = CreateObjective("GatherObject",3,1,3,905,nil,TableToList(Red));
 MyInfo = DoObjective(CollectRed);
 
-end;TurnInQuestUsingDB(905);
+end;
+TurnInQuestUsingDB(905);
+
+
+function Wife() 
+Units = GetUnitsList();
+  foreach Unit in Units do
+        Log(Unit.Name);
+     if (Unit.Name == "Beaten Corpse") and (IsUnitValid(Unit)== true) then
+         Log("Found Wife");         
+         InteractWithUnit(Unit);
+		 SleepPlugin(2000);
+		 UseMacro("Gossip1")
+		 SleepPlugin(2000);
+      end; -- IF
+   end; -- For Each
+end;
+if CanTurnInQuest(4921)==false and HasPlayerFinishedQuest(4921)==false then
+QuestGoToPoint(-1790.527,-2375.617,91.67355);
+		 SleepPlugin(5000);
+		 Wife();
+end;
+
+TurnInQuestUsingDB(3261);
+CompleteObjectiveOfQuest(899,1)
+
+if IsOnQuest(882)==true and HasItem("Fresh Zhevra Carcass")==false and CanTurnInQuest(882)==false then 
+
+Log("Getting Fresh Zhevra Carcass");
+
+Carcass = CreateObjective("KillMobsAndLoot",1,1,882,1,TableToList{3426,3242});
+KillMobsUntilItem("Fresh Zhevra Carcass",Carcass,1);
+end;
+if IsOnQuest(882)==true and HasItem("Fresh Zhevra Carcass")==true and CanTurnInQuest(882)==false then 
+Log("Doing Fresh Zhevra Carcass");
+
+QuestGoToPoint(-432.0163,-3435.21,91.75598);
+SleepPlugin();
+UseItem("Fresh Zhevra Carcass");
+SleepPlugin(5000);
+end;
+
+Log("Doing Ishamuhale");
+
+Ishamuhale = {};
+Ishamuhale[1] = 3257;
+KillLootIshamuhale = CreateObjective("KillMobsAndLoot",1,1,1,882,TableToList(Ishamuhale));
+MyInfo = DoObjective(KillLootIshamuhale);
+
+
+TurnInQuestUsingDB(4921);
+TurnInQuestUsingDB(899);
+if HasPlayerFinishedQuest(899)==true then
+Log("Deleting old quests");
+UseMacro("AbandonQuests");
+end;
+
+
+
 
 
 
