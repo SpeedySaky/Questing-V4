@@ -8,21 +8,12 @@ Player = GetPlayer();
 
 AddNameToAvoidWhiteList("Young Wolf");
 AddNameToAvoidWhiteList("Timber Wolf");
-AddNameToAvoidWhiteList("Cobold Worker");
-AddNameToAvoidWhiteList("Cobold Vermin");
+AddNameToAvoidWhiteList("Kobold Worker");
+AddNameToAvoidWhiteList("Kobold Vermin");
 
 
 
-AcceptQuestUsingDB(1598);
----- Step Count [31] ----
-CompleteObjectiveOfQuest(1598,1)
 
-CompleteObjectiveOfQuest(1598,1)
----------Step end-----------
-
----- Step Count [59] ----
-TurnInQuestUsingDB(1598);
----------Step end-----------
 
 ---- Step Count [67] ----
 AcceptQuestUsingDB(783);
@@ -53,7 +44,6 @@ CompleteObjectiveOfQuest(7,1)
 ---- Step Count [124] ----
 CompleteObjectiveOfQuest(33,1)
 ---------Step end-----------
-GrindAreaUntilLevel(4)
 
 ---- Step Count [134] ----
 TurnInQuestUsingDB(33);
@@ -70,7 +60,6 @@ AcceptQuestUsingDB(3103);
 AcceptQuestUsingDB(3104);
 AcceptQuestUsingDB(3105);
 
-
 TurnInQuestUsingDB(3100);
 TurnInQuestUsingDB(3101);
 TurnInQuestUsingDB(3102);
@@ -78,11 +67,15 @@ TurnInQuestUsingDB(3103);
 TurnInQuestUsingDB(3104);
 TurnInQuestUsingDB(3105);
 ---------Step end-----------
-
 ---- Step Count [177] ----
 CompleteObjectiveOfQuest(15,1)
 ---------Step end-----------
 
+---- Step Count [185] ----
+GrindAreaUntilLevel(4)
+---------Step end-----------
+
+---- Step Count [196] ----
 TurnInQuestUsingDB(15);
 AcceptQuestUsingDB(21);
 ---------Step end-----------
@@ -116,6 +109,12 @@ CompleteObjectiveOfQuest(18,1)
 
 GrindAreaUntilLevel(6)
 ---------Step end-----------
+
+---- Probbly train here I think
+if Player.Level == 6 and HasPlayerFinishedQuest(6) == false then
+Log("Attempting to train the player!");
+TrainAtNearestClassTrainer();
+end;
 
 
 ---- Step Count [545] ----
@@ -267,18 +266,22 @@ AcceptQuestUsingDB(61);
 AcceptQuestUsingDB(112);
 ---------Step end-----------
 
-if HasPlayerFinishedQuest(76)==false  then
-Log("Doing The Fargodeep Mine");
-QuestGoToPoint(-9100.666,-564.2968,61.3069);
+if HasPlayerFinishedQuest(76)==false   then
+Log("Doing The Jasperlode Mine");
+QuestGoToPoint(-9081.433,-549.9197,59.63893);
 
 end;
+
 GrindAreaUntilLevel(9)
 TurnInQuestUsingDB(76);
 
 CompleteObjectiveOfQuest(112,1)
 
-if (Player.Level <10) then 
-Log("Grind to 10");
+TurnInQuestUsingDB(61);
+
+
+if (Player.Level <11) then 
+Log("Grind to 11");
 
 Grind = {};
 Grind[1] = 524;
@@ -286,9 +289,10 @@ Grind[2] = 1922;
 Grind[3] = 822;
 
 Grind = CreateObjective("KillMobsAndLoot",1,10,1,999,TableToList(Grind));
-GrindUntilLvl(10,Grind,true);
+GrindUntilLvl(11,Grind,true);
 end;
 
+TurnInQuestUsingDB(112);
 
 if HasPlayerFinishedQuest(88)==false and CanTurnInQuest(88)==false then
 
@@ -300,7 +304,6 @@ KillLootPrincess = CreateObjective("KillMobsAndLoot",1,1,1,88,TableToList(Prince
 MyInfo = DoObjective(KillLootPrincess);
 end;
 
-TurnInQuestUsingDB(76);
 TurnInQuestUsingDB(112);
 
 ---------Step end-----------
@@ -314,6 +317,7 @@ CompleteObjectiveOfQuest(5545,1)
 TurnInQuestAt(10616,5545);
 
 AcceptQuestUsingDB(83);
+AcceptQuestUsingDB(114);
 TurnInQuestUsingDB(114);
 TurnInQuestUsingDB(88);
 TurnInQuestUsingDB(239);
