@@ -13,6 +13,9 @@ local gossipQuestBlacklist = {
 	77617,
 	77571,
 	77643,
+	77620,
+	77667,
+	77671,
 }
 
 local itemCacheQueue = {}

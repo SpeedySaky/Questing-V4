@@ -3,9 +3,10 @@
 -- {"name", minLevel, maxLevel, "race"}
 SS.AllianceFlightPoints = {
 	-- Eastern Kingdoms
-	{"Stormwind", 1},
+	{"Stormwind", 1,60},
     {"Thelsamar", 1, 55},
-    {"Ironforge", 1},
+    {"Westfall", 1, 20},
+    {"Ironforge", 1,60},
     {"Lakeshire", 1, 55},
     {"Sentinel Hill", 1, 30},
     {"Booty Bay", 30, 45},

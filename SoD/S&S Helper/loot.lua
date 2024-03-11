@@ -380,9 +380,7 @@ local QuestItemToQuestId = {
 	[24504] = 9861, -- The Howling Wind
 	[37833] = 12419, -- Ruby Brooch
 	[36856] = 12147, -- Emblazoned Battle Horn
-	[1370] = 123, -- The Collector
-	[1962] = 178, -- Glowing Shadowhide Pendant
-	[2839] = 361, -- Letters to Ivette
+	[1370] = 123, -- Emblazoned Battle Horn
 
 }
 
